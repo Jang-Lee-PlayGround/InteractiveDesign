@@ -10,9 +10,9 @@
     "strictNullChecks": false,
     "baseUrl": "./",
     "paths": {
-      "@controllers/*": ["src/controllers/*"], // 컨트롤러
-      "@typedef/*": ["src/typedef/*"], //타입선언
-      "@hooks/*": ["src/hooks/*"], //공통로직 작성
+      "@controllers/*": ["source/controllers/*"], // 컨트롤러
+      "@typedef/*": ["source/typedef/*"], //타입선언
+      "@hooks/*": ["source/hooks/*"], //공통로직 작성
       "@public/*": ["app/public/*"], //asset들
       "@views/*": ["app/views/*"], //view들
       "@styles/*": ["app/styles/*"]
