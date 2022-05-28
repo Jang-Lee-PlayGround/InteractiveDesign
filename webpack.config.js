@@ -4,7 +4,6 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     //여기에 진입점
-    test: './src/controllers/test.ts',
   },
   output: {
     clean: true,
@@ -18,11 +17,11 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js'],
     alias: {
-      '@controllers': path.resolve(__dirname, 'src/controllers'),
-      '@typedef': path.resolve(__dirname, 'src/typedef'),
-      '@hooks': path.resolve(__dirname, 'src/hooks'),
-      '@public': path.resolve(__dirname, 'src/public'),
-      '@views': path.resolve(__dirname, 'src/views'),
+      '@controllers': path.resolve(__dirname, 'source/controllers'),
+      '@typedef': path.resolve(__dirname, 'source/typedef'),
+      '@hooks': path.resolve(__dirname, 'source/hooks'),
+      '@public': path.resolve(__dirname, 'source/public'),
+      '@views': path.resolve(__dirname, 'source/views'),
     },
   },
 };
