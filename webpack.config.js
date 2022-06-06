@@ -4,6 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     //여기에 진입점
+    test:'./source/controllers/test.controller.ts'
   },
   output: {
     clean: true,
