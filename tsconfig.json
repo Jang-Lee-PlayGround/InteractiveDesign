@@ -1,21 +1,21 @@
 {
-  "compilerOptions": {
-    "allowJs": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "module": "es6",
-    "target": "es5",
-    "sourceMap": true,
-    "outDir": "app/scripts",
-    "strictNullChecks": false,
-    "baseUrl": "./",
-    "paths": {
-      "@controllers/*": ["source/controllers/*"], // 컨트롤러
-      "@typedef/*": ["source/typedef/*"], //타입선언
-      "@hooks/*": ["source/hooks/*"], //공통로직 작성
-      "@public/*": ["app/public/*"], //asset들
-      "@views/*": ["app/views/*"], //view들
-      "@styles/*": ["app/styles/*"]
+    "compilerOptions": {
+        "allowJs": true,
+        "noImplicitAny": false,
+        "noImplicitThis": false,
+        "module": "es6",
+        "target": "es6",
+        "sourceMap": true,
+        "outDir": "app/scripts",
+        "strictNullChecks": false,
+        "baseUrl": "./",
+        "paths": {
+            "@controllers/*": ["source/controllers/*"], // 컨트롤러
+            "@typedef/*": ["source/typedef/*"], //타입선언
+            "@hooks/*": ["source/hooks/*"], //공통로직 작성
+            "@public/*": ["app/public/*"], //asset들
+            "@views/*": ["app/views/*"], //view들
+            "@styles/*": ["app/styles/*"]
+        }
     }
-  }
 }

@@ -7,11 +7,25 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ someFunction)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function someFunction() {
-    console.log("test");
-}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    get(key) {
+        return JSON.parse(window.sessionStorage.getItem(key));
+    },
+    set(key, value) {
+        window.sessionStorage.setItem(key, JSON.stringify(value));
+    },
+    remove(key) {
+        window.sessionStorage.removeItem(key);
+    },
+    key(idx) {
+        return window.sessionStorage.key(idx);
+    },
+    length() {
+        return window.sessionStorage.length;
+    },
+});
 
 
 /***/ })
@@ -77,7 +91,14 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hooks_sessionStore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
-(0,_hooks_sessionStore__WEBPACK_IMPORTED_MODULE_0__["default"])();
+_hooks_sessionStore__WEBPACK_IMPORTED_MODULE_0__["default"].set("test", 1);
+console.log(_hooks_sessionStore__WEBPACK_IMPORTED_MODULE_0__["default"].get("test"));
+console.log(_hooks_sessionStore__WEBPACK_IMPORTED_MODULE_0__["default"].length());
+_hooks_sessionStore__WEBPACK_IMPORTED_MODULE_0__["default"].set("test2", "test");
+console.log(_hooks_sessionStore__WEBPACK_IMPORTED_MODULE_0__["default"].get("test2"));
+console.log(_hooks_sessionStore__WEBPACK_IMPORTED_MODULE_0__["default"].length());
+console.log(_hooks_sessionStore__WEBPACK_IMPORTED_MODULE_0__["default"].remove("test2"));
+console.log(_hooks_sessionStore__WEBPACK_IMPORTED_MODULE_0__["default"].length());
 
 })();
 
